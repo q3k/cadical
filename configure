@@ -479,13 +479,13 @@ clean:
 	fi
 	rm -f "$makefile"
 test:
-	\$(MAKE) -j1 -C "\$(CADICALBUILD)" test
+	\$(MAKE) -C "\$(CADICALBUILD)" test
 cadical:
-	\$(MAKE) -j1 -C "\$(CADICALBUILD)" cadical
+	\$(MAKE) -C "\$(CADICALBUILD)" cadical
 mobical:
-	\$(MAKE) -j1 -C "\$(CADICALBUILD)" mobical
+	\$(MAKE) -C "\$(CADICALBUILD)" mobical
 update:
-	\$(MAKE) -j1 -C "\$(CADICALBUILD)" update
+	\$(MAKE) -C "\$(CADICALBUILD)" update
 .PHONY: all cadical clean mobical test update
 EOF
 
